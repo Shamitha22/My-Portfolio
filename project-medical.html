@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Agentic Multimodal Medical Assistant</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<nav>
+  <a href="projects.html">← Back to Projects</a>
+  <i class="fas fa-moon toggle" id="themeToggle"></i>
+</nav>
+
+<section>
+
+<h1><i class="fas fa-heartbeat"></i> Agentic Multimodal Medical Assistant</h1>
+<p>
+<strong>Role:</strong> Machine Learning Engineer · Graduate Research Assistant  
+<br><strong>Timeline:</strong> Oct 2025 – Present
+</p>
+
+<img src="images/medical.png" class="card-img">
+
+<!-- OVERVIEW -->
+<div class="grid">
+<div class="card">
+<i class="fas fa-info-circle"></i>
+<h3>Project Overview</h3>
+<p>
+The Agentic Multimodal Medical Assistant is a privacy-preserving clinical intelligence
+platform designed to assist healthcare professionals in real-time decision making.
+The system integrates clinical text data (EHR notes, reports) with medical imaging
+data using multimodal AI techniques while ensuring strict patient data privacy
+through federated learning.
+</p>
+<p>
+This project addresses key challenges in modern healthcare AI, including data silos,
+privacy regulations, and the need for context-aware medical decision support systems.
+</p>
+</div>
+
+<!-- PROBLEM -->
+<div class="card">
+<i class="fas fa-exclamation-circle"></i>
+<h3>Problem Statement</h3>
+<p>
+Traditional medical AI systems rely on centralized datasets, which creates serious
+privacy risks and limits data sharing across institutions. Additionally, unimodal
+models fail to capture the full clinical context when text and images are treated
+independently.
+</p>
+<p>
+The challenge was to design a system that:
+</p>
+<ul>
+<li>Preserves patient privacy</li>
+<li>Leverages both clinical text and medical images</li>
+<li>Supports real-time clinical decision making</li>
+<li>Reduces false negatives in high-risk scenarios</li>
+</ul>
+</div>
+
+<!-- ARCHITECTURE -->
+<div class="card">
+<i class="fas fa-project-diagram"></i>
+<h3>System Architecture & Workflow</h3>
+<ul>
+<li>Clinical text and medical images are processed locally at each hospital node</li>
+<li>Text data is embedded using transformer-based language models</li>
+<li>Medical images are encoded using vision models</li>
+<li>Multimodal feature fusion aligns image-text representations</li>
+<li>Federated learning aggregates model updates without sharing raw data</li>
+<li>Central coordinator updates global model parameters</li>
+</ul>
+<p>
+This architecture ensures that sensitive patient data never leaves its source
+environment while still enabling collaborative model improvement.
+</p>
+</div>
+
+<!-- MODELING -->
+<div class="card">
+<i class="fas fa-brain"></i>
+<h3>Modeling Approach</h3>
+<p>
+The system employs multimodal learning techniques to jointly represent visual and
+textual medical information. Feature fusion strategies were applied to combine
+embeddings from vision and language models, enabling contextual reasoning across
+modalities.
+</p>
+<p>
+Federated learning was implemented to support decentralized training across
+multiple medical institutions while complying with privacy regulations such as HIPAA.
+</p>
+</div>
+
+<!-- EVALUATION -->
+<div class="card">
+<i class="fas fa-chart-line"></i>
+<h3>Evaluation Strategy</h3>
+<p>
+Given the high-risk nature of medical applications, evaluation focused on minimizing
+false negatives rather than maximizing raw accuracy.
+</p>
+<ul>
+<li>Precision-Recall AUC (PR-AUC)</li>
+<li>Recall-focused metrics</li>
+<li>Error analysis on critical clinical cases</li>
+</ul>
+<p>
+This ensured that the system prioritizes patient safety and clinical reliability.
+</p>
+</div>
+
+<!-- IMPACT -->
+<div class="card">
+<i class="fas fa-stethoscope"></i>
+<h3>Impact & Outcomes</h3>
+<p>
+The system demonstrates the feasibility of deploying privacy-preserving multimodal
+AI in healthcare environments. It improves diagnostic support, enhances clinical
+context understanding, and reduces risks associated with centralized data storage.
+</p>
+<p>
+The approach can be extended to other sensitive domains such as finance and
+government analytics.
+</p>
+</div>
+
+<!-- TECH STACK -->
+<div class="card">
+<i class="fas fa-tools"></i>
+<h3>Technology Stack</h3>
+<p>
+Python · PyTorch · Transformers · NLP · Medical Imaging · Multimodal AI ·
+Federated Learning · Data Privacy Techniques
+</p>
+</div>
+
+<!-- REPOSITORY -->
+<div class="card">
+  <i class="fab fa-github"></i>
+  <h3>Project Repository</h3>
+  <p>
+    The implementation for this project is stored in the GitHub repository.
+    It includes core pipelines, model training code, preprocessing logic,
+    and supporting scripts used in the DTSC-5082 project — adapted here
+    for the Medical AI Assistant demonstration.
+  </p>
+
+  <a href="https://github.com/Shamitha22/DTSC-5082-PROJECT"
+     target="_blank"
+     class="btn">
+     <i class="fab fa-github"></i> View on GitHub
+  </a>
+</div>
+
+
+</div>
+
+<a class="btn" href="projects.html">
+<i class="fas fa-arrow-left"></i> Back to Projects
+</a>
+
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
